@@ -111,7 +111,7 @@ header .container ul li a:hover::after {
         right: 0;
         position: absolute;
         background-color: white;
-        box-shadow:0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:0 0px 10px var(--alt-color-p) ;
         transition: 0.3s ease;
         text-align: right;
     }
@@ -136,8 +136,6 @@ header .container ul li a:hover::after {
     box-shadow:0 1px 4px var(--main-color-p) ;
     transition: 0.3s;
 }
-.scroll-header .container #menu-icon {
-    color: var(--main-color-y);
-}
+
 /* scroll change color for header  */
     /* header  */
