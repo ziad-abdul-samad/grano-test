@@ -10,8 +10,16 @@
     --alt-color-p:#BE8CE5;
     --main-color-y : #ffeb3b;
     --alt-color-y:#fff176;
+    --gradient-p:linear-gradient(103deg, rgba(93,42,123,1) 44%, rgba(190,140,229,1) 100%);
+    --gradient-y :linear-gradient(103deg, rgba(255,235,59,1) 33%, rgba(255,241,118,1) 100%);
+    --mixed-gradient:linear-gradient(74deg, rgba(255,235,59,1) 0%, rgba(93,42,123,1) 73%);
     --font-family:'El Messiri', sans-serif;
     }
+
+span {
+    color: var(--main-color-y);
+}
+
     .container {
     padding-left: 10px;    
     padding-right: 10px;
@@ -29,8 +37,9 @@
     body {
     text-transform: capitalize;   
     font-family: var(--font-family);
-    height: 6000px;
+    height: 4000px;
     }
+
     /* end global rules  */
     /* header  */
     header {
@@ -42,7 +51,7 @@
         z-index: 100000;
         width: 100%;
         background-color:white;
-        box-shadow: 0 4px 8px var(--alt-color-y);
+        box-shadow: 0 4px 20px var(--main-color-p);
 
     }
 header .container {
@@ -111,7 +120,7 @@ header .container ul li a:hover::after {
         right: 0;
         position: absolute;
         background-color: white;
-    box-shadow:0 0px 10px var(--alt-color-p) ;
+        box-shadow:0 0px 1px var(--alt-color-p) ;
         transition: 0.3s ease;
         text-align: right;
     }
@@ -133,9 +142,69 @@ header .container ul li a:hover::after {
 }
 /* scroll change color for header  */
 .scroll-header {
-    box-shadow:0 1px 4px var(--main-color-p) ;
+    box-shadow:0 1px 4px var(--alt-color-y) ;
     transition: 0.3s;
 }
 
 /* scroll change color for header  */
     /* header  */
+    /* landing  */
+    .landing {
+        position: relative;
+        /* height: 100vh; */
+        background-image: url(../images/wave.png);
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: contain;
+        top: 0;
+        margin-top: 78.7px;
+    }
+
+    .landing .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: calc(100vh - 74px);
+        align-items: center;
+    
+    }
+    .landing .container .text {
+        direction: rtl;
+        text-align: center;
+
+    }
+    .landing .container .text h1 {
+        margin-top: 90px;
+        font-size: 30px;
+        color: var(--main-color-y);
+        text-shadow:1px 2px 2px var(--alt-color-p);
+    }
+    .landing .container .text h1 span {
+        color: var(--alt-color-p);
+        font-size: 30px;
+    }
+    .landing .container .text .title {
+        color: var(--alt-color-p);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .landing .container .text .title span {
+        font-size: 30px;
+        color: var(--main-color-y);
+    }
+    .landing .container .text .description {
+        color: #777;
+        font-size: 16px;
+    }
+    .landing .container .text .description span {
+    color: var(--alt-color-p);
+    font-size: 30px;
+    }
+    
+    .landing .container .image img {
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    /* landing  */
