@@ -13,7 +13,7 @@
 .sections-title {
     font-size: 20px;
     color: var(--main-color-y);
-    text-shadow: 0px -1px 1px var(--alt-color-p);
+    text-shadow: 0px 1px 0px var(--alt-color-p);
     padding: 10px 20px;
 }
 /* components  */
